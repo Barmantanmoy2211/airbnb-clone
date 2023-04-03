@@ -1,4 +1,11 @@
+import { Nunito } from "next/font/google";
+import Navbar from "./components/navbar/Navbar";
+
 import './globals.css'
+
+const font = Nunito({
+  subsets : ['latin'],
+});
 
 export default function RootLayout({
   children,
@@ -7,12 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body className={font.className}>
+        <Navbar />
+        {children}
+        </body>
     </html>
   )
 }
