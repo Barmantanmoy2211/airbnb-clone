@@ -1,6 +1,6 @@
 import { Listing, User} from "@prisma/client";
 
-export type safeListings = Omit<
+export type safeListing = Omit<
 Listing,
 "createdAt"
 > & {
