@@ -10,7 +10,8 @@ import {
   GiCaveEntrance, 
   GiForestCamp, 
   GiIsland,
-  GiWindmill
+  GiWindmill,
+  GiHills
 } from 'react-icons/gi';
 import { FaSkiing } from 'react-icons/fa';
 import { BsSnow } from 'react-icons/bs';
@@ -96,6 +97,11 @@ export const categories = [
     label: 'Lux',
     icon: IoDiamond,
     description: 'This property is brand new and luxurious!'
+  },
+  {
+    label: 'Hills',
+    icon: GiHills,
+    description: 'This property is in in Hillstation'
   }
 ]
 
